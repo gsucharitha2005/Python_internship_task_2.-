@@ -32,7 +32,7 @@ def issue_book():
         print("book not found")
         return
 
-    print("\nRemaining Books in Library:")
+    print("\nremaining books in library:")
     print("___________________________________________________________")
     print("book_ISBN\tbook_name\tbook_author")
     print("____________________________________________________________")
@@ -44,10 +44,10 @@ def return_book():
     return_ISBN=int(input("Enter ISBN to return: "))
     for i in library:
         if i["book_ISBN"]==return_ISBN:
-            print("book already exists in library")
+            print("book return in library")
             break
     else:
-        print("book not found (cannot return)")
+        print("book cannot return")
         
 
 def calculate_fine_days():
